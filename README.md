@@ -32,15 +32,15 @@ k : Sensibilidade da demanda por moeda de acordo com a taxa de juros
 CURVA IS:
 
 Y = C + I + G           
-C = C0 + c*(Y_ant - T)  
-I = I0 + d*Y_ant - f*i_ant
-T = T0 + t*Y_ant        
+C = C0 + c * (Y_ant - T)  
+I = I0 + d * Y_ant - f * i_ant
+T = T0 + t * Y_ant        
 G(t) = G0                     
 D(t) = D_ant + T - G
 
-Y = C0 + c*(Y_ant - (T0 + t*Y_ant )) + I0 + d*Y_ant - f*i_ant + G0
-Y = C0 + c*Y_ant - c*T0 - c*t*Y_ant + I0 + d*Y_ant - f*i_ant + G0
-Y = Y_ant(c - c*t + d) + C0 + I0 + G0 - c*T0 - f*i_ant
+Y = C0 + c * (Y_ant - (T0 + t * Y_ant )) + I0 + d * Y_ant - f * i_ant + G0
+Y = C0 + c * Y_ant - c * T0 - c * t * Y_ant + I0 + d * Y_ant - f * i_ant + G0
+Y = Y_ant * (c - c * t + d) + C0 + I0 + G0 - c * T0 - f * i_ant
 
 CURVA LM:
 
