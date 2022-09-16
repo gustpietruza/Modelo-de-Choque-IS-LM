@@ -44,23 +44,23 @@ Y = Y_ant(c - c*t + d) + C0 + I0 + G0 - c*T0 - f*i_ant
 
 CURVA LM:
 
-M = k*Y - h*i
-h*i = k*Y - M
-i = k/h * Y - 1/h * M
-i_ant = k/h * Y_ant - 1/h * M
+M = k * Y - h * i
+h * i = k * Y - M
+i = k / h * Y - 1 / h * M
+i_ant = k / h * Y_ant - 1 / h * M
 
 EQUILÍBRIO:
 
-Y = Y_ant * (c - c*t + d) + C0 + I0 + G0 - c*T0 - f*(k/h * Y_ant - 1/h * M)
-Y = Y_ant * (c - c*t + d) + C0 + I0 + G0 - c*T0 - f*k/h * Y_ant + f/h * M)
-Y = Y_ant * [(c - c*t + d) - f*k/h] + C0 + I0 + G0 - c*T0 + f/h * M
-Y = Y_ant * [((c - c*t + d)*h - f*k) / h] + C0 + I0 + G0 - c*T0 + f/h * M
+Y = Y_ant * (c - c * t + d) + C0 + I0 + G0 - c * T0 - f * (k / h * Y_ant - 1 / h * M)
+Y = Y_ant * (c - c * t + d) + C0 + I0 + G0 - c * T0 - f * k/h * Y_ant + f / h * M)
+Y = Y_ant * [(c - c * t + d) - f * k / h] + C0 + I0 + G0 - c * T0 + f / h * M
+Y = Y_ant * [((c - c * t + d) * h - f * k) / h] + C0 + I0 + G0 - c * T0 + f / h * M
 
 Assumindo Y == Y_ant e i == i_ant
 
-Y = Y(c - c*t + d) + C0 + I0 + G0 - c*T0 - f*i
-Y - Y(c - c*t + d) =  C0 + I0 + G0 - c*T0 - f*i
-Y * (1 - c - d + c*t) = C0 + I0 + G0 - c*T0 - f*i
-Y = [1/(1 - c - d + c*t)] * (C0 + I0 + G0 - c*T0) - [1/(1 - c - d + c*t)] * f*i
+Y = Y * (c - c * t + d) + C0 + I0 + G0 - c * T0 - f * i
+Y - Y * (c - c * t + d) =  C0 + I0 + G0 - c * T0 - f * i
+Y * (1 - c - d + c * t) = C0 + I0 + G0 - c * T0 - f * i
+Y = [1 / (1 - c - d + c * t)] * (C0 + I0 + G0 - c * T0) - [1 / (1 - c - d + c * t)] * f * i
 
-Multiplicador simples: m = [1/(1 - c - d + c*t)]
+Multiplicador simples: m = [1 / (1 - c - d + c * t)]
