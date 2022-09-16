@@ -1,7 +1,9 @@
 # Modelo-de-Choque-IS-LM
 Modelagem para choque econômico em modelo IS-LM intertemporal e economia fechada, com o objetivo de avaliar a evolução das variáveis envolvidas ao longo do tempo
 
+
 ANÁLISE DAS VARIÁVEIS
+
 
 Y : Produto da economia em p
 
@@ -56,6 +58,7 @@ k : Sensibilidade da demanda por moeda de acordo com a taxa de juros
 
 CURVA IS:
 
+
 Y = C + I + G 
 
 C = C0 + c * (Y_ant - T)  
@@ -74,7 +77,9 @@ Y = C0 + c * Y_ant - c * T0 - c * t * Y_ant + I0 + d * Y_ant - f * i_ant + G0
 
 Y = Y_ant * (c - c * t + d) + C0 + I0 + G0 - c * T0 - f * i_ant
 
+
 CURVA LM:
+
 
 M = k * Y - h * i
 
@@ -87,6 +92,7 @@ i_ant = k / h * Y_ant - 1 / h * M
 
 EQUILÍBRIO:
 
+
 Y = Y_ant * (c - c * t + d) + C0 + I0 + G0 - c * T0 - f * (k / h * Y_ant - 1 / h * M)
 
 Y = Y_ant * (c - c * t + d) + C0 + I0 + G0 - c * T0 - f * k/h * Y_ant + f / h * M)
@@ -95,7 +101,9 @@ Y = Y_ant * [(c - c * t + d) - f * k / h] + C0 + I0 + G0 - c * T0 + f / h * M
 
 Y = Y_ant * [((c - c * t + d) * h - f * k) / h] + C0 + I0 + G0 - c * T0 + f / h * M
 
+
 Assumindo Y == Y_ant e i == i_ant
+
 
 Y = Y * (c - c * t + d) + C0 + I0 + G0 - c * T0 - f * i
 
@@ -105,4 +113,6 @@ Y * (1 - c - d + c * t) = C0 + I0 + G0 - c * T0 - f * i
 
 Y = [1 / (1 - c - d + c * t)] * (C0 + I0 + G0 - c * T0) - [1 / (1 - c - d + c * t)] * f * i
 
+
 Multiplicador simples: m = [1 / (1 - c - d + c * t)]
+
