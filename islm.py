@@ -35,18 +35,18 @@ def i_at(k, h, Y_at, M):
 
 #Período inicial
 
-C0 = 500
-I0 = 400
-G0 = 200
-T0 = 100
-D0 = 600
-M = 3000
-c = 0.8
-d = 0.1
-f = 1000
-t = 0.05
-k = 0.4
-h = 9000
+C0 = input('C0:')
+I0 = input('I0:')
+G0 = input('G0:')
+T0 = input('T0:')
+D0 = input('D0:')
+M = input('M:')
+c = input('c:')
+d = input('d:')
+f = input('f:')
+t = input('t:')
+k = input('k:')
+h = input('h:')
 
 #Definição das variáveis de p = 0
 #Multiplicador da renda
